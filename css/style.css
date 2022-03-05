@@ -104,7 +104,7 @@ body {
 }
 
 .intro-img {
-  width: 170px;
+  width: 200px;
   height: 210px;
   border-radius: 50%;
 }
@@ -172,4 +172,70 @@ p {
   color: var(--pure-white);
   background-color: var(--accent);
   border-radius: 10px;
+}
+
+.portfolio {
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+
+.white {
+  color: var(--pure-white);
+  text-align: center;
+}
+
+.education ol {
+  margin: 0px 0;
+  padding: 0 50px;
+}
+
+.education li {
+  padding: 10px 25px;
+}
+
+.languages {
+  color: var(--pure-white);
+  background-color: var(--accent);
+}
+
+.pills {
+  margin-left: 0;
+  list-style: none;
+  counter-reset: li;
+}
+.pills li {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--accent);
+  padding: 10px 0;
+  position: relative;
+  left: 1.5em;
+  margin-bottom: 0.75em;
+  padding-left: 1em;
+  background: white;
+}
+.pills li:before {
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1.5em;
+  width: 1.875em;
+  text-align: center;
+  color: rgb(66, 66, 136);
+  font-weight: bold;
+  background: #f8e003;
+  border-bottom-left-radius: 70em;
+  border-top-left-radius: 70em;
+  counter-increment: li;
+  content: counter(li);
+}
+
+.footer {
+  text-align: center;
+}
+
+footer a:hover {
+  background-color: var(--accent-light);
+  text-decoration: none;
 }
